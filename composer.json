@@ -1,0 +1,26 @@
+{
+  "name": "remiheens/http-status-checker",
+  "description": "CLI tool to check HTTP Status for an URL or a set of URL",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Remi HEENS",
+      "email": "remi@heens.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/console": "^2.7",
+    "guzzlehttp/guzzle": "~6.0",
+    "illuminate/support": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Remiheens\\HttpStatusChecker\\": "src"
+    }
+  },
+  "bin": [
+    "http-status-checker"
+  ]
+}

@@ -1,0 +1,3 @@
+http://github.com   301 https
+https://github.com  200 https
+http://google.com       http
