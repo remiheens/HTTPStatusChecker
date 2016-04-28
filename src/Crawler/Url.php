@@ -154,7 +154,7 @@ class Url
      */
     public function setPort($port)
     {
-        if (!is_numeric($port))
+        if (!is_int($port))
         {
             throw new InvalidPortNumber();
         }

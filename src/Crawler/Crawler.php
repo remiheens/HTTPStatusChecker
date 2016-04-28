@@ -31,6 +31,10 @@ class Crawler
      */
     protected $crawlObserver;
 
+    /**
+     * @var array
+     */
+    protected $crawledUrls = [];
 
     /**
      * @return static

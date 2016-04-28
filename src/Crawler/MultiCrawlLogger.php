@@ -39,7 +39,7 @@ class MultiCrawlLogger implements CrawlObserver
     {
         $statusCode = $response ? $response->getStatusCode() : self::UNRESPONSIVE_HOST;
 
-        if (starts_with($statusCode, '3'))
+        if ($response && starts_with($statusCode, '3'))
         {
             $locations = $response->getHeader('Location');
             $location = reset($locations);
