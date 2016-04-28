@@ -3,6 +3,7 @@
   "description": "CLI tool to check HTTP Status for an URL or a set of URL",
   "minimum-stability": "stable",
   "license": "MIT",
+  "version" : "1.0.1",
   "authors": [
     {
       "name": "Remi HEENS",
