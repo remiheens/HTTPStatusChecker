@@ -10,9 +10,8 @@
 namespace Remiheens\HttpStatusChecker\Command;
 
 use Remiheens\HttpStatusChecker\Crawler\Crawler;
-use Remiheens\HttpStatusChecker\Crawler\Url;
 use Remiheens\HttpStatusChecker\Crawler\MultiCrawlLogger;
-
+use Remiheens\HttpStatusChecker\Crawler\Url;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -70,8 +69,8 @@ class ScanCommand extends Command
 
             Crawler::create()->setCrawlObserver(new MultiCrawlLogger($output))
                    ->startCrawlingMulti($lstUrls);
-
-            return 0;
         }
+
+        return 0;
     }
 }

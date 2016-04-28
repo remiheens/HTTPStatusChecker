@@ -8,10 +8,10 @@
 
 namespace Remiheens\HttpStatusChecker\Crawler;
 
-use Remiheens\HttpStatusChecker\HTTP;
-use Remiheens\HttpStatusChecker\Exceptions\InvalidScheme;
 use Remiheens\HttpStatusChecker\Exceptions\InvalidCodeNumber;
 use Remiheens\HttpStatusChecker\Exceptions\InvalidPortNumber;
+use Remiheens\HttpStatusChecker\Exceptions\InvalidScheme;
+use Remiheens\HttpStatusChecker\HTTP;
 
 class Url
 {

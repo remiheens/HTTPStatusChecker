@@ -8,14 +8,13 @@
 
 namespace Remiheens\HttpStatusChecker\Command;
 
+use Remiheens\HttpStatusChecker\Crawler\Crawler;
+use Remiheens\HttpStatusChecker\Crawler\CrawlLogger;
+use Remiheens\HttpStatusChecker\Crawler\Url;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-
-use Remiheens\HttpStatusChecker\Crawler\CrawlLogger;
-use Remiheens\HttpStatusChecker\Crawler\Crawler;
-use Remiheens\HttpStatusChecker\Crawler\Url;
 
 class TestCommand extends Command
 {

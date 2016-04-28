@@ -55,7 +55,7 @@ class Crawler
     }
 
     /**
-     * Set the crawl observer.
+     * Set the checker observer.
      *
      * @param \Remiheens\HttpStatusChecker\Crawler\CrawlObserver $crawlObserver
      *
@@ -69,9 +69,9 @@ class Crawler
     }
 
     /**
-     * Start the crawling process.
+     * Test provided URL
      *
-     * @param \Remiheens\HttpStatusChecker\Crawler\Url|string $baseUrl
+     * @param string $url
      *
      * @throws \Remiheens\HttpStatusChecker\Exceptions\InvalidBaseUrl
      */
@@ -90,9 +90,9 @@ class Crawler
     }
 
     /**
-     * Start the crawling process.
+     * Test each URL provided
      *
-     * @param \Remiheens\HttpStatusChecker\Crawler\Url|string $baseUrl
+     * @param string[] $urls
      *
      * @throws \Remiheens\HttpStatusChecker\Exceptions\InvalidBaseUrl
      */
