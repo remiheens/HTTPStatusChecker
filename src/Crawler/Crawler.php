@@ -32,7 +32,7 @@ class Crawler
     protected $crawlObserver;
 
     /**
-     * @var array
+     * @var \Illuminate\Support\Collection
      */
     protected $crawledUrls = [];
 

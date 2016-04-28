@@ -38,6 +38,7 @@ class MultiCrawlLogger implements CrawlObserver
     public function hasBeenCrawled(Url $url, $response)
     {
         $statusCode = $response ? $response->getStatusCode() : self::UNRESPONSIVE_HOST;
+        $reason = $response ? $response->getReasonPhrase() : '';
 
         if ($response && starts_with($statusCode, '3'))
         {
@@ -83,7 +84,7 @@ class MultiCrawlLogger implements CrawlObserver
 
         $colorTag = $colors[ $i ];
 
-        $this->output->writeln("<{$colorTag}>[{$timestamp}] {$statusCode} {$response->getReasonPhrase()} - {$url}</{$colorTag}>");
+        $this->output->writeln("<{$colorTag}>[{$timestamp}] {$statusCode} {$reason} - {$url}</{$colorTag}>");
     }
 
     public function finishedCrawling()
