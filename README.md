@@ -42,7 +42,7 @@ When check is finished a summary will be shown.
 
 ## Security
 
-If you discover any security related issues, please email remi@heens.org instead of using the issue tracker.
+If you discover any security related issues, please email github@remiheens.fr instead of using the issue tracker.
 
 ## License
 
